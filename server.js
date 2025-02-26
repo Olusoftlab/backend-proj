@@ -12,8 +12,8 @@ const userProd = require("./userroutes/product")
 const userOrder = require("./userroutes/order")
 const handleAuth = require("./middleware/authmiddleware")
 const getUserRole = require("./middleware/generalware")
-
-
+const createIndex = require("./index/createindex")
+const verifyIndex = require("./index/verifyindex")
 
 app.use(rateLimiter)
 app.use(cookieParser())
@@ -42,6 +42,8 @@ app.use("/order", userOrder)
 
 
 
+createIndex()
+verifyIndex()
 
 
 

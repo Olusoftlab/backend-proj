@@ -1,7 +1,7 @@
 const user = require("../Modal/userschema")
 
 
-
+//creating index
 const createIndex = async () => {
 
 

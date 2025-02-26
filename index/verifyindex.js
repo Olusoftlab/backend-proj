@@ -1,6 +1,6 @@
 const user = require("../Modal/userschema")
 
-
+//verifying index
 const verifyIndex = async () => {
 
     try {
